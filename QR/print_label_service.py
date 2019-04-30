@@ -18,7 +18,7 @@ model="QL-1060N"
 backend="network"
 printer="tcp://10.13.37.201"
 
-mqtt_topic="public/p2k16-dev/label/#"
+mqtt_topic="/public/p2k16-dev/label/#"
 
 def make_label(user_id, username, name, telephone, email):
 	im = qrcode.make(USER_URL+str(user_id))
